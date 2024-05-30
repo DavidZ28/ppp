@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Automatización de revisión de requisitos </h1>
+    <form action="/review" method="POST">
+        <textarea placeholder="ingrese su requisito: " name="requirement" id="requirement"></textarea ><br>
+        <button  type="submit" >
+            Revisar 
+        </button>
+
+
+    </form>
+    {% if response %}
+    <div>
+        <h3>Respuesta:</h3>
+        <p> {{response['candidates'][0]['content']['parts'][0]['text']}} </p>
+
+        
+    </div>
+    {% endif %}
+
+    <form action="/r3vi3w" method="POST">
+        <textarea placeholder="ingrese su gestion: " name="gestion" id="gestion"></textarea ><br>
+        <button  type="submit" >
+            Revisar 
+        </button>
+
+
+    </form>
+    {% if response %}
+    <div>
+        <h3>Respuesta:</h3>
+        <p> {{response['candidates'][0]['content']['parts'][0]['text']}} </p>
+
+         
+    </div>
+    {% endif %}
+</body>
+</html>
