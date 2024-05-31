@@ -4,41 +4,31 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Automatización de revisión de requisitos</title>
 </head>
 <body>
-    <h1> Automatización de revisión de requisitos </h1>
-    <form action="/review" method="POST">
-        <textarea placeholder="ingrese su requisito: " name="requirement" id="requirement"></textarea ><br>
-        <button  type="submit" >
-            Revisar 
-        </button>
+    <h1>Automatización de revisión de requisitos</h1>
 
-
+    <form method="POST" enctype="multipart/form-data">
+        <textarea placeholder="Ingrese su texto:" name="requirement" id="requirement"></textarea><br>
+        <input id="file" type="file" accept=".txt" name="file"><br>
+        
+        <button formaction="/review" type="submit">Revisar Requisitos</button>
+        <button formaction="/analyze" type="submit">Analizar Historias</button>
+        <button formaction="/verify" type="submit">Verificar Informe de Gestión</button>
     </form>
-    {% if response %}
+
+    {% if error %}
     <div>
         <h3>Respuesta:</h3>
-        <p> {{response['candidates'][0]['content']['parts'][0]['text']}} </p>
-
-        
+        <p>{{ error }}</p>
     </div>
     {% endif %}
 
-    <form action="/r3vi3w" method="POST">
-        <textarea placeholder="ingrese su gestion: " name="gestion" id="gestion"></textarea ><br>
-        <button  type="submit" >
-            Revisar 
-        </button>
-
-
-    </form>
     {% if response %}
     <div>
         <h3>Respuesta:</h3>
-        <p> {{response['candidates'][0]['content']['parts'][0]['text']}} </p>
-
-         
+        <p>{{ response['candidates'][0]['content']['parts'][0]['text'] }}</p>
     </div>
     {% endif %}
 </body>
