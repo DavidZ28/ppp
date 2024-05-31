@@ -1,0 +1,21 @@
+Requisito:
+Identificación:
+REQ-001
+
+Título:
+Crear nueva tarea
+
+Descripción:
+El sistema debe permitir a los usuarios crear nuevas tareas con la siguiente información:
+
+Título de la tarea (obligatorio)
+Descripción de la tarea (opcional)
+Fecha de vencimiento (opcional)
+Prioridad de la tarea (alta, media, baja) (opcional)
+Criterios de aceptación:
+El usuario puede ingresar un título para la tarea.
+Si se proporciona, el usuario puede ingresar una descripción para la tarea.
+Si se proporciona, el usuario puede seleccionar una fecha de vencimiento para la tarea.
+Si se proporciona, el usuario puede seleccionar una prioridad para la tarea.
+Al enviar el formulario, la tarea se guarda correctamente en la base de datos del sistema.
+El sistema muestra un mensaje de confirmación al usuario después de guardar la tarea.

@@ -1,0 +1,24 @@
+Título
+Revisión automática de requisitos
+
+Descripción
+Como usuario del sistema, quiero poder ingresar un requisito de software en un formulario y recibir una respuesta automatizada que me indique si el requisito es válido y está bien formulado, para asegurarme de que estoy siguiendo las mejores prácticas de especificación de requisitos.
+
+Criterios de Aceptación
+Formulario de Entrada:
+
+El formulario debe permitir al usuario ingresar un requisito de software en un campo de texto.
+El formulario debe tener un botón para enviar el requisito para su revisión.
+Validación del Requisito:
+
+Al enviar el formulario, el requisito debe ser enviado a una API externa para su validación.
+El sistema debe mostrar un mensaje de error si la conexión con la API falla.
+Respuesta de la API:
+
+La respuesta de la API debe ser mostrada en la misma página, debajo del formulario.
+Si la API valida el requisito como correcto, debe mostrarse un mensaje indicando que el requisito es válido.
+Si la API encuentra problemas con el requisito, debe mostrar una sugerencia de corrección o mejora.
+Navegación:
+
+Debe haber un botón en la página principal que permita al usuario ir a una sección de "Gestión de Proyectos".
+En la sección de "Gestión de Proyectos", el usuario debe poder ver el estado actual del proyecto basado en una consulta a la API.

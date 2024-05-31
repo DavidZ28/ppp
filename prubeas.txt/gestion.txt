@@ -1,0 +1,45 @@
+Nombre del Proyecto: Automatización de Revisión de Requisitos
+
+Fecha: 30 de Mayo de 2024
+
+1. Resumen Ejecutivo
+El proyecto "Automatización de Revisión de Requisitos" tiene como objetivo desarrollar una aplicación web que permita a los usuarios ingresar requisitos de software y recibir una respuesta automatizada que verifique la validez y formulación de dichos requisitos. Actualmente, el proyecto se encuentra en la fase de desarrollo y ha alcanzado varios hitos importantes.
+
+2. Estado del Proyecto
+Fase Actual: Desarrollo
+Estado General: En curso
+Fecha de Inicio: 1 de Abril de 2024
+Fecha Estimada de Finalización: 30 de Junio de 2024
+3. Hitos Alcanzados
+Configuración del Entorno de Desarrollo: Completado
+Configuración de Flask, plantillas HTML y conexión con la API externa.
+Desarrollo de la Funcionalidad Principal:
+Formulario de Ingreso de Requisitos: Completado
+Integración con API de Validación: Completado
+Interfaz de Usuario:
+Diseño de Página Principal (index.html): Completado
+Diseño de Página de Gestión (index2.html): En curso
+Pruebas Unitarias: En curso
+Pruebas básicas de funcionalidad completadas.
+4. Problemas y Riesgos
+Problema: Retrasos en la respuesta de la API externa.
+Acción: Contacto con el proveedor de la API para mejorar los tiempos de respuesta.
+Riesgo: Posible sobrecarga del servidor debido al alto volumen de solicitudes.
+Mitigación: Implementar técnicas de optimización y escalabilidad del servidor.
+5. Próximos Pasos
+Completar el Diseño de la Página de Gestión: Finalizar el diseño y la implementación de index2.html.
+Implementación de Mejoras de Rendimiento: Optimizar la interacción con la API y la carga del servidor.
+Pruebas de Integración: Realizar pruebas de integración completas para asegurar la funcionalidad entre todos los componentes del sistema.
+Documentación del Usuario: Crear documentación y guías para los usuarios finales.
+6. Análisis de Recursos
+Equipo de Desarrollo:
+Desarrollador Backend: Juan Pérez
+Desarrollador Frontend: Ana Gómez
+Ingeniero de Pruebas: Carlos Ruiz
+Horas Trabajadas:
+Abril: 160 horas
+Mayo: 150 horas
+Total: 310 horas
+7. Conclusión
+El proyecto está avanzando según lo planeado, con varios hitos importantes ya alcanzados. Aunque se han identificado algunos problemas y riesgos, se han implementado planes de acción para mitigarlos. El equipo está enfocado en completar las tareas pendientes y realizar las pruebas necesarias para asegurar una entrega exitosa del proyecto.
+
